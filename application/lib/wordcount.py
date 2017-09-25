@@ -5,6 +5,8 @@ import optparse
 import logging
 
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import split
+from pyspark.sql.functions import explode
 
 
 logger = logging.getLogger(__name__)
